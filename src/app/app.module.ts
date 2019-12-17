@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { IndexComponent } from './index/index.component';
 import { TypeScriptComponent } from './type-script/type-script.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
+import { PipeComponent } from './pipe/pipe.component';
+import { DirectiveComponent } from './directive/directive.component';
 
 
 @NgModule({
@@ -14,7 +16,9 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
     AppComponent,
     IndexComponent,
     TypeScriptComponent,
-    DataBindingComponent
+    DataBindingComponent,
+    PipeComponent,
+    DirectiveComponent
   ],
   imports: [
     BrowserModule,
