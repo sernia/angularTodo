@@ -9,6 +9,7 @@ import { TypeScriptComponent } from './type-script/type-script.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { PipeComponent } from './pipe/pipe.component';
 import { DirectiveComponent } from './directive/directive.component';
+import { TaskComponent } from './task/task.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { DirectiveComponent } from './directive/directive.component';
     TypeScriptComponent,
     DataBindingComponent,
     PipeComponent,
-    DirectiveComponent
+    DirectiveComponent,
+    TaskComponent
   ],
   imports: [
     BrowserModule,

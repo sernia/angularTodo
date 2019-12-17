@@ -5,6 +5,7 @@ import { TypeScriptComponent } from './type-script/type-script.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { PipeComponent } from './pipe/pipe.component';
 import { DirectiveComponent } from './directive/directive.component';
+import { TaskComponent } from './task/task.component';
 
 
 
@@ -14,7 +15,9 @@ const routes: Routes = [
   {path: 'type-script', component: TypeScriptComponent},
   {path: 'data-binding', component: DataBindingComponent},
   {path: 'pipe', component: PipeComponent},
-  {path: 'directive', component: DirectiveComponent}
+  {path: 'directive', component: DirectiveComponent},
+  {path: 'task', component: TaskComponent}
+
 ];
 
 @NgModule({

@@ -1,0 +1,30 @@
+<h1>{{title}}</h1>
+<h2>{{task.name}} の詳細</h2>
+<div><label>id: </label>{{task.id}}</div>
+<div><label>name: </label>{{task.name}}</div>
+<div>
+  <label>name: </label>
+  <input [(ngModel)]="task.name" placeholder="name">
+</div>
+
+<ul class="tasks">
+  <li *ngFor="let task of tasks" [class.selected]="task === selectedTask" (click)="onSelect(task)">
+    <span class="badge">{{task.id}}</span>{{task.name}}
+  </li>
+</ul>
+
+<div *ngIf="selectedTask">
+  <h2>{{selectedTask.name}} yes</h2>
+  <div> 
+    <label>
+      id:
+    </label>
+    {{selectedTask.id}}
+  </div>
+  <div>
+    <label>
+      name:
+    </label>
+    <input [(ngModel)]="selectedTask.name" placeholder="name" />
+  </div>
+</div>
