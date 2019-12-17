@@ -1,0 +1,27 @@
+<!-- Interpolation(補間) -->
+<h1>{{title}}</h1>
+
+<!-- プロパティバインディング -->
+<div><img [src]="url"></div>
+
+<!-- 属性バインディング -->
+<div><input type="text" [attr.list]="datalistId"></div>
+<datalist id="datalist1">
+    <option>属性</option>
+    <option>バインディング</option>
+</datalist>
+
+<!-- クラスバインディング -->
+<p [class.red]="classRed">クラスバインディング</p>
+
+<!-- スタイルバインディング -->
+<p [style.color]="blueStyle">スタイルバインディング</p>
+
+<!-- イベントバインディング -->
+<div><button (click)="onClick()">イベントバインディング</button></div>
+
+<!-- 双方向バインディング -->
+<div><input [(ngModel)]="inputValue"></div>{{inputValue}}
+
+<!-- テンプレート参照変数 -->
+<div>テンプレート参照変数　<input #input1 (keyup)="0">{{input1.value}}</div>
